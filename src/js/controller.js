@@ -23,7 +23,7 @@ const controlRecipes = async function () {
 
     // 1) Update bookmarks view
     bookmarksView.update(model.state.bookmarks);
-
+    console.log(model.loadRecipe(id));
     // 2) Loading recipe
     await model.loadRecipe(id);
 
